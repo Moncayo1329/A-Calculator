@@ -1,0 +1,7 @@
+const numberbuttons = document.querySelectorAll('[data-number]')
+const operationbuttons = document.querySelectorAll('[data-operation]')
+const equalsbutton = docuement.querySelector('[data-equals]')
+const deletebutton = docuement.querySelector('[data-delete]')
+const allClearbutton = docuement.querySelector('[data-all-clear]')
+const previousOperandtextElement = docuement.querySelector('[data-previous-operand]')
+const currentOperandtextElement= docuement.querySelector('[data-current-operand]')
