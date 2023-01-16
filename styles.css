@@ -11,7 +11,7 @@ body{
 
 }
 
-.calculator-grid{
+.calculator__keys{
     display: grid;
     justify-content: center;
     align-content: center;
@@ -21,7 +21,7 @@ body{
 
 }
 
-.calculator-grid > button {
+.calculator__keys > button {
     cursor:pointer;
     font-size: 2rem;
     border: 1px solid white;
@@ -30,7 +30,7 @@ body{
 
 }
 
-.calculator-grid > button:hover {
+.calculator__keys > button:hover {
 
     background-color:rgba(255, 255, 255, .9);
 
@@ -40,7 +40,8 @@ body{
    grid-column: span 2;
 }
 
-.output{
+.calculator__keys > *:active::before,
+.calculator__keys > .is-depressed::before{
   grid-column: 1 / -1;
   background-color: rgba(0, 0, 0, .75);
   display: flex;
@@ -52,7 +53,7 @@ body{
   word-break: break-all;
 }
 
-.output .previous-operand {
+.output .key--operator {
     color:rgba(255, 255, 255, .75);
    font-size: 1.5rem;
 }
@@ -61,3 +62,13 @@ body{
     color:white;
    font-size: 2.5rem;
 }
+
+.key--operator {
+    background-color: #eee;
+  }
+  
+  .key--equal {
+    background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+    grid-column: -2;
+    grid-row: 2 / span 4;
+  }
