@@ -23,7 +23,7 @@
 
         .calculator-grid > button {
             cursor: pointer;
-            font-size: 2rem;
+            font-size: 1.7rem;
             border: 1px, solid #FFFFFF;
             outline: none;
             background-color: rbga(255, 255, 255, .75);
@@ -71,28 +71,21 @@
 
        @media only screen and (max-width: 767px) {
         .calculator-grid {
-          grid-template-columns: repeat(3, 80px);
+          grid-template-columns: repeat(4, 70px);
           grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+          margin: 10px;
+          padding: 10px;
         }
       
-        .calculator-grid > button {
-          font-size: 1.5rem;
-        }
       
-        .output {
-          padding: 5px;
-        }
-      
-        .output .current-operand {
-          font-size: 1.2rem;
-        }
-      
-        .calculator-grid > button[data-equals] {
-          font-size: 1.5rem; /* Ajusta el tamaño del botón "=" */
-          padding: 5px -10px -5px; /* Ajusta el relleno del botón "=" */
-         
-        }
       }
+      
+      
+      
+
+      
+        
+      
       
 
 
