@@ -23,7 +23,7 @@
 
         .calculator-grid > button {
             cursor: pointer;
-            font-size: 1.7rem;
+            font-size: 1.3rem;
             border: 1px, solid #FFFFFF;
             outline: none;
             background-color: rbga(255, 255, 255, .75);
